@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Make it count!</title>
+        <title>ImpactCount - Make it count!</title>
 
         {% load static %}
         <link href="{% static 'landingpage/css/home.css' %}" rel="stylesheet">
@@ -10,17 +10,31 @@
     <body>
         <section>
             {% include 'partials/header.html' %}
+
             {% block content %}
-            {% include 'partials/cta.html' %}
+
+            <section id="cta">
+                {% include 'partials/cta.html' %}
+            </section>
             <hr>
-            {% include 'partials/about_us.html' %}
+            <section id="about_us">
+                {% include 'partials/about_us.html' %}
+            </section>
             <hr>
-            {% include 'partials/faq.html' %}
+            <section id="faq">
+                {% include 'partials/faq.html' %}
+            </section>
             <hr>
-            {% include 'partials/pricing.html' %}
+            <section id="pricing">
+                {% include 'partials/pricing.html' %}
+            </section>
             <hr>
+            <section id="contact">
             {% include 'partials/contact.html' %}
+            </section>
+
             {% endblock %}
+            
             {% include 'partials/footer.html' %}
         </section>
     </body>
