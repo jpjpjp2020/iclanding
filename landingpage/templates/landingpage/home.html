@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Make it count!</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Make it count!</title>
 
-    {% load static %}
-    <link href="{% static 'landingpage/css/home.css' %}" rel="stylesheet">
-</head>
-<body>
+        {% load static %}
+        <link href="{% static 'landingpage/css/home.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            {% include 'partials/header.html' %}
+            {% block content %}
 
-</body>
+            {% endblock %}
+            {% include 'partials/footer.html' %}
+        </section>
+    </body>
 </html>
