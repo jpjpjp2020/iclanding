@@ -11,7 +11,15 @@
         <section>
             {% include 'partials/header.html' %}
             {% block content %}
-
+            {% include 'partials/cta.html' %}
+            <hr>
+            {% include 'partials/about_us.html' %}
+            <hr>
+            {% include 'partials/faq.html' %}
+            <hr>
+            {% include 'partials/pricing.html' %}
+            <hr>
+            {% include 'partials/contact.html' %}
             {% endblock %}
             {% include 'partials/footer.html' %}
         </section>
