@@ -30,3 +30,26 @@ build/
 # Ignore OS generated files
 ehthumbs.db
 Thumbs.db
+
+# Node modules
+node_modules
+
+# npm debugging logs
+npm-debug.log*
+
+# Debug log from npm
+npm-debug.log
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Next.js build output
+.next
+
+# VS Code settings
+.vscode/
+
+# Python virtual env
+env/
+*.venv
+
