@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ImpactCount - Make it count!</title>
+
+        {% load static %}
+        <link href="{% static 'landingpage/css/output.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            {% include 'partials/header.html' %}
+
+            {% block content %}
+
+            <section id="cta">
+                {% include 'partials/cta.html' %}
+            </section>
+            <hr>
+            <section id="about_us">
+                {% include 'partials/about_us.html' %}
+            </section>
+            <hr>
+            <section id="faq">
+                {% include 'partials/faq.html' %}
+            </section>
+            <hr>
+            <section id="pricing">
+                {% include 'partials/pricing.html' %}
+            </section>
+            <hr>
+            <section id="contact">
+            {% include 'partials/contact.html' %}
+            </section>
+
+            {% endblock %}
+
+            {% include 'partials/footer.html' %}
+        </section>
+    </body>
+</html>
