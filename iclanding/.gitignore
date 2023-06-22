@@ -53,5 +53,6 @@ npm-debug.log
 env/
 *.venv
 
-*.css
+# Ignore specific CSS file
+/landingpage/static/landingpage/css/output.css
 !*.css.example
