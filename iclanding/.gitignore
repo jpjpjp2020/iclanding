@@ -53,3 +53,5 @@ npm-debug.log
 env/
 *.venv
 
+*.css
+!*.css.example

@@ -1,6 +1,9 @@
 module.exports = {
-  purge: ['./templates/**/*.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './landingpage/templates/landingpage/*.html',
+    './landingpage/templates/partials/*.html'
+  ],
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},
   },
