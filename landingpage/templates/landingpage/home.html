@@ -10,7 +10,16 @@
     <body>
         <section>
             {% include 'partials/header.html' %}
+
+            {% block content %}
+
+            <section id="cta">
+                {% include 'partials/cta.html' %}
+            </section>
+
+            {% endblock %}
         </section>
         <script src="{% static 'landingpage/js/header.js' %}"></script>
+        <script src="{% static 'landingpage/js/cta.js' %}"></script>
     </body>
 </html>
