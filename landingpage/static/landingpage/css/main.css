@@ -7,3 +7,34 @@
         scroll-behavior: smooth;
     }
 }
+
+@layer components {
+  .container {
+    width: 100%;
+    /* padding-left: 1rem; */  /* adjust */
+    /* padding-right: 1rem; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;     /* for smaller screens; adjust! */
+  }
+  @screen sm {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @screen md {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @screen lg {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  @screen xl {
+    .container {
+      max-width: 1536px;
+    }
+  }
+}
