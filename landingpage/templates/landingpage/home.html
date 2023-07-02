@@ -9,14 +9,20 @@
     </head>
     <body>
         <section>
+
             <div class="m-8" id="header-menu">
                 {% include 'partials/header.html' %}
             </div>
+
             <div class="container">
                 {% block content %}
 
                 <section id="cta">
                     {% include 'partials/cta.html' %}
+                </section>
+
+                <section id="visual">
+                    {% include 'partials/visual.html' %}
                 </section>
 
                 <section id="faq">

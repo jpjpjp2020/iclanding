@@ -1,224 +1,175 @@
 {% load static %}
 
-<section class="px-12" id="faq">
+<section class="p-12 bg-gray-100" id="faq">
 
-    <div class="mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div class="mx-auto max-w-4xl">
-            <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">FAQ</h2>
-            <dl class="mt-10 space-y-6">
+    <div>
+        <h4 class="text-2xl font-bold text-gray-700 tracking-widest mb-12">FAQ</h4>
+    </div>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">What email should I use to sign up?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            What email should I use to sign up?
+            <span class="faq-icon ml-6 flex h-7 items-center">
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-0">
-                        <p class="text-base leading-7 text-gray-600">
-                            If you are an employee looking to collect your impact, then we suggest
-                            using a personal email - so you would truly own your own positive data.
-                        </p>
-                        <p class="text-base leading-7 text-gray-600">
-                            If you are an employer, we suggest using an email matching your company
-                            domain - while in beta, we do manual company account verifications, but
-                            will later likely introduce an automated email + domain match checker.
-                        </p>
-                    </dd>
-                </div>
+                <!--
+                  Icon when question is collapsed.
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">What will using ImpactCount cost me?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-1">
-                        <p class="text-base leading-7 text-gray-600">
-                            Our plan is to have a free tier that allows any user by minimum to collect
-                            and own their positive impact data without paying anything. We will also try
-                            to gradually introduce beneficial added features which will go under
-                            a “Plus” account plan + some usage based tools later on.
-                        </p>
-                    </dd>
-                </div>
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">How can I get my account verified?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-0">
+            <p>
+                If you are an employee looking to collect your impact, then we suggest
+                using a personal email - so you would truly own your own positive data.
+            </p>
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-2">
-                        <p class="text-base leading-7 text-gray-600">
-                            If you are an employee, your jobs can be verified by your employer when they sign up.
-                        </p>
-                        <p class="text-base leading-7 text-gray-600">
-                            If you are an employer, during beta we do manual company verifications
-                            (based on email and domain match) and plan to later introduce an automated process.
-                        </p>
-                    </dd>
-                </div>
+            <p class="mt-4">
+                If you are an employer, we suggest using an email matching your company
+                domain - while in beta, we do manual company account verifications, but
+                will later likely introduce an automated email + domain match checker.
+            </p>
+        </div>
+    </div>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">Why does my public page show “Rejected” statistic cards with a score of 0?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            What will using ImpactCount cost me?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-1">
+            <p class="mt-4">
+                Our plan is to have a free tier that allows any user by minimum to collect
+                and own their positive impact data without paying anything. We will also try
+                to gradually introduce beneficial added features which will go under
+                a “Plus” account plan + some usage based tools later on.
+            </p>
+        </div>
+    </div>
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-3">
-                        <p class="text-base leading-7 text-gray-600">
-                            We are testing an anti-spam and anti-fake request logic where spamming random
-                            people or companies will leave a public mark on one’s public profile.
-                            This should limit spam and fake requests. We will likely introduce an automated
-                            account suspension logic later based on fake and spam requests.
-                        </p>
-                    </dd>
-                </div>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            How can I get my account verified?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-2">
+            <p class="mt-4">
+                If you are an employee, your jobs can be verified by your employer when they sign up.
+            </p>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">How do I add a job?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+            <p class="mt-4">
+                If you are an employer, during beta we do manual company verifications
+                (based on email and domain match) and plan to later introduce an automated process.
+            </p>
+        </div>
+    </div>
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-4">
-                        <p class="text-base leading-7 text-gray-600">
-                            You can add a job from Settings - My Jobs. If your employer has not joined,
-                            you can add a company name tied to your job. Once you employer joins, you can
-                            request them to verify your employment, or they can claim you as an employee.
-                        </p>
-                    </dd>
-                </div>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            Why does my public page show “Rejected” statistic cards with a score of 0?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-3">
+            <p class="mt-4">
+                We are testing an anti-spam and anti-fake request logic where spamming random
+                people or companies will leave a public mark on one’s public profile.
+                This should limit spam and fake requests. We will likely introduce an automated
+                account suspension logic later based on fake and spam requests.
+            </p>
+        </div>
+    </div>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">How do I set up a company profile?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            How do I add a job?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-4">
+            <p class="mt-4">
+                You can add a job from Settings - My Jobs. If your employer has not joined,
+                you can add a company name tied to your job. Once you employer joins, you can
+                request them to verify your employment, or they can claim you as an employee.
+            </p>
+        </div>
+    </div>
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-5">
-                        <p class="text-base leading-7 text-gray-600">
-                            You have to first set up a personal account. Then you can add a company profile
-                            from Settings - My Company. Your personal account will have the admin rights for
-                            the company. Adding additional admin accounts will be added in the future.
-                        </p>
-                    </dd>
-                </div>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            How do I set up a company profile?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-5">
+            <p class="mt-4">
+                You have to first set up a personal account. Then you can add a company profile
+                from Settings - My Company. Your personal account will have the admin rights for
+                the company. Adding additional admin accounts will be added in the future.
+            </p>
+        </div>
+    </div>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">What’s the difference between Earned and Sent impact and Client and Team impact?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            What’s the difference between Earned and Sent impact and Client and Team impact?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-6">
+            <p class="mt-4">
+                Earned impact is the positive impact you have earned from your clients, colleagues,
+                or employers. Sent impact is the impact you have confirmed as a client, a colleague,
+                or as an employer (if you have set up a company).
+            </p>
 
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-6">
-                        <p class="text-base leading-7 text-gray-600">
-                            Earned impact is the positive impact you have earned from your clients, colleagues,
-                            or employers. Sent impact is the impact you have confirmed as a client, a colleague,
-                            or as an employer (if you have set up a company).
-                        </p>
-                        <p class="text-base leading-7 text-gray-600">
-                            Client impact is from clients, team impact is from colleagues or the employer.
-                        </p>
-                    </dd>
-                </div>
+            <p class="mt-4">
+                Client impact is from clients, team impact is from colleagues or the employer.
+            </p>
+        </div>
+    </div>
 
-                <hr>
-                <div class="pt-4">
-                    <dt>
-                        <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">Why is there no text feedback option?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                </svg>
-
-                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                                </svg>
-                            </span>
-                        </button>
-                    </dt>
-                    <dd class="mt-2 pr-12" id="faq-7">
-                        <p class="text-base leading-7 text-gray-600">
-                            We are testing a quick way of leaving positive feedback - via giving an impact score
-                            from 1 to 99 for any positive interactions + a general reason from a preset list.
-                            We might introduce a text feedback option later.
-                        </p>
-                    </dd>
-                </div>
-
-            </dl>
+    <hr class="mb-6">
+    <div class="faq-item mb-6">
+        <button type="button" class="faq-question text-gray-900 font-semibold" aria-controls="faq-answer-0" aria-expanded="false">
+            Why is there no text feedback option?
+            <span class="faq-icon">
+                <!-- your svg icon here -->
+            </span>
+        </button>
+        <div class="faq-answer text-gray-700 mt-4" id="faq-answer-7">
+            <p class="mt-4">
+                We are testing a quick way of leaving positive feedback - via giving an impact score
+                from 1 to 99 for any positive interactions + a general reason from a preset list.
+                We might introduce a text feedback option later.
+            </p>
         </div>
     </div>
 

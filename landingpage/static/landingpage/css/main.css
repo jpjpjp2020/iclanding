@@ -11,8 +11,6 @@
 @layer components {
   .container {
     width: 100%;
-    /* padding-left: 1rem; */  /* adjust */
-    /* padding-right: 1rem; */
     margin-left: auto;
     margin-right: auto;
     max-width: 640px;     /* for smaller screens; adjust! */
