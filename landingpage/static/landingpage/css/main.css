@@ -35,4 +35,10 @@
       max-width: 1536px;
     }
   }
+  .faq-control {
+		@apply flex items-center justify-between;
+	}
+	.faq-answer {
+		@apply hidden;
+	}
 }

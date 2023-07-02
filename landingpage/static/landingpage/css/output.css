@@ -592,6 +592,16 @@ html {
   }
 }
 
+.faq-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-answer {
+  display: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -688,8 +698,8 @@ html {
   margin-bottom: 2rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-12 {
@@ -738,10 +748,6 @@ html {
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-7 {
-  height: 1.75rem;
 }
 
 .h-8 {

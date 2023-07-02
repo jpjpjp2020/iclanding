@@ -29,14 +29,11 @@
                     {% include 'partials/faq.html' %}
                 </section>
 
-                <section id="about_us">
-                    {% include 'partials/about_us.html' %}
-                </section>
-
                 {% endblock %}
             </div>
         </section>
-        <script src="{% static 'landingpage/js/header.js' %}"></script>
-        <script src="{% static 'landingpage/js/cta.js' %}"></script>
+        <script src="{% static 'landingpage/js/header.js' %}" defer></script>
+        <script src="{% static 'landingpage/js/cta.js' %}" defer></script>
+        <script src="{% static 'landingpage/js/faq.js' %}" defer></script>
     </body>
 </html>
