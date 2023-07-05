@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ImpactCount - Make it count!</title>
+
+    {% load static %}
+    <link href="{% static 'landingpage/css/output.css' %}" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'landingpage/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'landingpage/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'landingpage/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'landingpage/favicons/site.webmanifest' %}">
+
+</head>
+<body class="bg-gray-50">
+    <section>
+
+        <div class="m-8" id="header-menu">
+            {% include 'partials/header.html' %}
+        </div>
+
+        <div class="container">
+
+            {% block content %}
+
+            {% endblock %}
+
+            {% include 'partials/footer.html' %}
+
+        </div>
+
+    </section>
+    <script src="{% static 'landingpage/js/header.js' %}" defer></script>
+
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>

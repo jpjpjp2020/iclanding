@@ -1,60 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>ImpactCount - Make it count!</title>
+{% extends 'landingpage/base.html' %}
 
-        {% load static %}
-        <link href="{% static 'landingpage/css/output.css' %}" rel="stylesheet">
+{% load static %}
 
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'landingpage/favicons/apple-touch-icon.png' %}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'landingpage/favicons/favicon-32x32.png' %}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'landingpage/favicons/favicon-16x16.png' %}">
-        <link rel="manifest" href="{% static 'landingpage/favicons/site.webmanifest' %}">
+{% block content %}
 
-    </head>
-    <body class="bg-gray-50">
-        <section>
+<section id="cta">
+    {% include 'partials/cta.html' %}
+</section>
 
-            <div class="m-8" id="header-menu">
-                {% include 'partials/header.html' %}
-            </div>
+<section id="visual">
+    {% include 'partials/visual.html' %}
+</section>
 
-            <div class="container">
-                {% block content %}
+<section id="pricing">
+    {% include 'partials/pricing.html' %}
+</section>
 
-                <section id="cta">
-                    {% include 'partials/cta.html' %}
-                </section>
+<section id="faq">
+    {% include 'partials/faq.html' %}
+</section>
 
-                <section id="visual">
-                    {% include 'partials/visual.html' %}
-                </section>
+<section id="about_us">
+    {% include 'partials/about_us.html' %}
+</section>
 
-                <section id="pricing">
-                    {% include 'partials/pricing.html' %}
-                </section>
+<section id="contact">
+    {% include 'partials/contact.html' %}
+</section>
 
-                <section id="faq">
-                    {% include 'partials/faq.html' %}
-                </section>
+{% endblock %}
 
-                <section id="about_us">
-                    {% include 'partials/about_us.html' %}
-                </section>
-
-                <section id="contact">
-                    {% include 'partials/contact.html' %}
-                </section>
-
-                {% endblock %}
-
-                {% include 'partials/footer.html' %}
-
-            </div>
-        </section>
-        <script src="{% static 'landingpage/js/header.js' %}" defer></script>
-        <script src="{% static 'landingpage/js/cta.js' %}" defer></script>
-        <script src="{% static 'landingpage/js/faq.js' %}" defer></script>
-    </body>
-</html>
+{% block extra_js %}
+<script src="{% static 'landingpage/js/cta.js' %}" defer></script>
+<script src="{% static 'landingpage/js/faq.js' %}" defer></script>
+{% endblock %}
