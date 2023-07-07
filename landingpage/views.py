@@ -6,4 +6,4 @@ def home_view(request):
 
 
 def privacy_view(request):
-    return render(request, 'landingpage/privacy.html')
+    return render(request, 'docs/privacy.html')
