@@ -16,17 +16,21 @@
 <body class="bg-gray-50">
     <section>
 
-        <div class="m-8" id="header-menu">
+        <div class="m-8 md:m-0 md:py-6" id="header-menu">
             {% include 'partials/header.html' %}
         </div>
 
-        <div class="container">
+        <div>
 
             {% block content %}
 
             {% endblock %}
 
-            {% include 'partials/footer.html' %}
+            <div class="bg-black">
+                <div class="md:mx-auto md:max-w-7xl">
+                    {% include 'partials/footer.html' %}
+                </div>
+            </div>
 
         </div>
 
