@@ -873,8 +873,8 @@ html {
   padding-bottom: 2rem;
 }
 
-.pb-24 {
-  padding-bottom: 6rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pb-5 {
@@ -1040,6 +1040,10 @@ html {
 
   .lg\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .lg\:mb-32 {
+    margin-bottom: 8rem;
   }
 
   .lg\:mt-12 {
