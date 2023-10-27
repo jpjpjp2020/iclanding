@@ -24,3 +24,18 @@ body {
 	font-family: monospace, monospace;
 	text-decoration: none;
 }
+
+.placeholder {
+    text-align: center;
+    margin-top:  10%;
+	font-size: 2em;
+	font-family: sans-serif, sans-serif;
+	text-decoration: none;
+}
+
+.termspage {
+	margin-top:  10%;
+	margin-right: 5%;
+  	margin-left: 5%;
+	font-family: sans-serif, sans-serif;
+}
