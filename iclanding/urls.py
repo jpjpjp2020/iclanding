@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.urls import re_path
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('landingpage.urls')),
+    re_path(r'^@(?P<username>\w+)/$', views.redirect_to_app),
 ]
