@@ -32,7 +32,10 @@ ehthumbs.db
 Thumbs.db
 
 # Node modules
-node_modules
+node_modules/
+
+# staticiles for build
+staticfiles/
 
 # npm debugging logs
 npm-debug.log*
