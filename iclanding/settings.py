@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -77,15 +78,19 @@ WSGI_APPLICATION = 'iclanding.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD': config('DATABASE_PASSWORD'),
-        'HOST': config('DATABASE_HOST'),
-        'PORT': config('DATABASE_PORT'),
-    }
+    'default': dj_database_url.config(default=config('DATABASE_URL'))
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config('DATABASE_NAME'),
+#         'USER': config('DATABASE_USER'),
+#         'PASSWORD': config('DATABASE_PASSWORD'),
+#         'HOST': config('DATABASE_HOST'),
+#         'PORT': config('DATABASE_PORT'),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
