@@ -13,5 +13,5 @@ MVP/beta test for a platform where employees can collect and own their positive 
 
 #### Links:
 
-- [Visit Our App beta](https://www.app.impactcount.com)
+- [Visit Our App beta](https://app.impactcount.com)
 - [Learn More on Our Website](https://www.impactcount.com)
