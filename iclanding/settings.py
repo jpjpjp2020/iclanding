@@ -30,6 +30,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
 
+# remove/comment out
+# CSRF_TRUSTED_ORIGINS = ['https://ca7a-2001-1530-1010-79bd-318a-ef2-cd9d-6110.ngrok-free.app']
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -77,16 +80,14 @@ WSGI_APPLICATION = 'iclanding.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# C IN
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL', default='sqlite:///db.sqlite3')
     )
 }
 
-# DATABASES = {
-#     'default': dj_database_url.config(default=config('DATABASE_URL'))
-# }
-
+# C OUT
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -97,6 +98,15 @@ DATABASES = {
 #         'PORT': config('DATABASE_PORT'),
 #     }
 # }
+
+# C out
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

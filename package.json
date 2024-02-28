@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./landingpage/static/landingpage/css/main.css -o ./landingpage/static/landingpage/css/output.css"
+    "build-css": "npx tailwindcss -i ./landingpage/static/landingpage/css/main.css -o ./landingpage/static/landingpage/css/output.css",
+    "watch-css": "npx tailwindcss -i ./landingpage/static/landingpage/css/main.css -o ./landingpage/static/landingpage/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
